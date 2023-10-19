@@ -1,99 +1,65 @@
-*{
-    font-family: 'Nunito', sans-serif;
+.header{
+    margin-top: 91px;
 }
-body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(20, 66, 114)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    
 }
-
-.rahmat-polygon{
-    object-fit: cover;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.navbar-toggler-icon:hover{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(20, 66, 114)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    
+}
+/* Untuk menghilangkan border pada navbar toggler */
+.navbar-toggler {
+    border: none;
 }
 
-.rahmat-konten{
-    margin-top: 4vw;
-    width: fit-content;
-
+/* Untuk menghilangkan box shadow (seperti border) ketika navbar toggler diklik */
+.navbar-toggler:focus{
+    box-shadow: none;
 }
-.rahmat-logo{
+
+.nav-link{
+    color: #144272;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    transform: translateY(-5px);
+    transition: ease-in-out 0.2s;
+    color: #005ec2;
+}
+.enter-blog{
+    border: 1px solid #144272;
+    background-color: white;
+    color: #144272;
+}
+.enter-blog:hover{
+    background-color: #144272;
+    border-color: #144272;
+    transition: ease-in-out 0.2s;
+}
+.don{
+    color: #144272;
+}
+
+h1{
+    color: #144272;
+}
+.navbar-brand:hover{
+    color: #144272;
+    transform: scale(1.1);
+    transition: 0.3s;
+    
+}
+.navbar-brand{
     display: flex;
-    margin-bottom: 2vw;
-}
-.rahmat-logo img{
-    width: 26%;
-    margin-left: auto;
-}
-
-.rahmat-judul{
-    width: fit-content;
-    font-size: 250%;
     font-weight: bold;
+    color: #144272;
+    font-size: 22px;
+    transition: 0.3s;
 }
-.rahmat-list{
-    display: flex;
-    height: fit-content;
+.navbar-brand p{
+    margin: auto 0;
+    font-size: 150%;
+    padding-left: 10px;
 }
-.rahmat-list ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.rahmat-list li{
-    margin-left: 2vw;
-    margin-top: -5px;
-    margin-bottom: 1vw;
-    font-size: 180%;
-}
-.rahmat-list img{
-    width: 7.5%;
-    height: 7.5%;
-}
-.rahmat-isi ul{
-    display: block;
-    list-style: none;
-    padding: 0px;
-}
-.rahmat-isi .rahmat-list{
-    padding-bottom: 20px;
-}
-.rahmat-isi{
-    margin-top: 20px;
-}
-
-@media only screen and (max-width: 719px){
-    .rahmat-polygon{
-        width: 70%;
-        height: auto;
-    }
-    .rahmat-logo img{
-        width: 16vw;
-    }
-    .rahmat-konten{
-        position: relative;
-        right: 22vw;
-    
-    }
-    .rahmat-judul{
-        font-size: 5vw;
-    }
-    .rahmat-list img{
-        width: 3.5vw;
-        height: 3.5vw;
-    }
-    .rahmat-list li{
-        font-size: 3vw;
-    }
-    
-}
-
-
-
-
-
