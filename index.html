@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="style.css">
         
 
-        <link rel="shortcut icon" href="img/Logo.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
@@ -26,7 +26,7 @@
 
     <body>
         
-        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top shadow-sm">
+        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top shadow-sm">
             <div class="container">
                 <a href="#" class="navbar-brand">
                     <img src="img/Logo.svg" alt="Don Permanos" height="65px">
@@ -61,7 +61,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="#kontak" class="nav-link">
                             Kontak
                         </a>
                     </li>
@@ -154,6 +154,63 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="kontak" class="pb-5">
+            <h1 class="text-center fw-bold pb-5">KONTAK</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 rahmat-kontak-teks pb-5">
+                        <p class="pb-3">
+                            Jika anda tertarik untuk bekerja sama atau sekadar berkomunikasi dengan saya, silakan hubungi saya melalui:
+                        </p>
+                        <p>
+                            WhatsApp : <a href="https://wa.me/+6283147882492" target="_blank" class="text-decoration-none text-dark"><b>0831-4788-2492</b></a><br>
+                            Email : <a href="mailto:rahmatramadhanpermana@gmail.com" class="text-decoration-none text-dark"><b>rahmatramadhanpermana@gmail.com</b></a>
+                        </p>
+                        <div class="sosial-container d-flex pt-5">
+                            <a href="https://www.linkedin.com/in/rahmat-ramadhan-permana-77520524a" target="_blank">
+                                <div class="rahmat-sosial-icon d-flex me-3 bg-dark">
+                                    <img src="img/linkedIn icon.svg" alt="LinkedIn" class="mx-auto w-50">
+                                </div>
+                            </a>
+                            <a href="https://instagram.com/daniiprm" target="_blank">
+                                <div class="rahmat-sosial-icon d-flex me-3 bg-dark">
+                                    <img src="img/insta icon.svg" alt="Instagram" class="mx-auto">
+                                </div>
+                            </a>
+                            <a href="https://line.me/ti/p/rkc4Txo7cw" target="_blank">
+                                <div class="rahmat-sosial-icon d-flex me-3 bg-dark">
+                                    <img src="img/line icon.svg" alt="Line" class="mx-auto">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Nama *</label>
+                              <input type="text" class="form-control" id="inputNama">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email *</label>
+                              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                              <div id="emailHelp" class="form-text">Kami tidak akan membagikan email anda ke siapapun.</div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Subjek *</label>
+                              <input type="text" class="form-control" id="inputSubjek">
+                            </div>
+                            <div class="mb-3 form-check inputPesan">
+                            <label class="labelPesan" for="inputPesan">Pesan</label><br>
+                              <textarea name="pesan" id="inputPesan" cols="50" rows="8"></textarea>
+                            </div>
+                            <button type="submit" class="btn submit">Submit</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+            
         </section>
 
         
