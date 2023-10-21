@@ -1,15 +1,22 @@
 *{
-    font-family: sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+*::selection{
+    background-color: hsla(0, 0%, 0%, 0.8);
+    color: white;
 }
 .header{
     margin-top: 91px;
+    padding: 100px;
 }
 .navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(20, 66, 114)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: 0.3s;
     
 }
 .navbar-toggler-icon:hover{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(20, 66, 114)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: 0.3s;
     
 }
 /* Untuk menghilangkan border pada navbar toggler */
@@ -25,21 +32,54 @@
 .nav-link{
     color: #144272;
     transition: 0.3s;
+
+    position: relative;
 }
 .nav-link:hover{
-    transform: translateY(-5px);
-    transition: ease-in-out 0.2s;
-    color: #005ec2;
+    color: hsl(211, 90%, 40%);
+
+    animation-name: gerakan;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    
 }
+@keyframes gerakan {
+    0% {
+      transform: translate(0px, -0.2px); /* Mulai dari posisi awal */
+    }
+    25% {
+      transform:translate(2px, -5px);
+    }
+    50% {
+        transform:translate(0px, -3px);
+      }
+    75%{
+        transform:translate(-2px, -5px);
+    }
+    100%{
+        transform:translate(0px, -0.2px);
+    }
+
+  }
 .enter-blog{
     border: 1px solid #144272;
     background-color: white;
     color: #144272;
 }
+.enter-blog a{
+    text-decoration: none;
+    color: #144272;
+    font-weight: bold;
+}
 .enter-blog:hover{
     background-color: #144272;
     border-color: #144272;
     transition: ease-in-out 0.2s;
+
+    .enter{
+        color: white;
+    }
 }
 .don{
     color: #144272;
@@ -58,7 +98,6 @@ h1{
     display: flex;
     font-weight: bold;
     color: #144272;
-    font-size: 22px;
     transition: 0.3s;
 }
 .navbar-brand p{
@@ -69,7 +108,102 @@ h1{
 .navbar-brand img{
     width: 20%;
 }
-*::selection{
-    background-color: hsla(0, 0%, 0%, 0.8);
+footer{
+    margin-top: auto;
+    width: 100%;
+}
+.card img{
+    border-radius: 20px;
+}
+.navigate a{
+    text-decoration: none;
     color: white;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.navigate a:hover{
+    color: rgb(160, 160, 160);
+    transition: 0.2s;
+}
+.copy{
+    font-size: 12px;
+    padding: 30px 0;
+}
+.rahmat-pre{
+    width: 470px;
+    line-height: 2;
+}
+.rahmat-nama{
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+.banner img{
+    width: 100%;
+}
+.rahmat-cerita p{
+    text-align: justify;
+    line-height: 2;
+}
+
+.rahmat-back-top{
+    color: white;
+    transition: 0.5s;
+}
+.rahmat-back-top:hover{
+    color: #4d4949;
+    transition: 0.2s;
+
+}
+.rahmat-sosial-icon{
+    background-color: #4d4949;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    transition: 0.3s;
+}
+.rahmat-sosial-icon:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+.rahmat-sosial-icon img{
+    width: 26px;
+}
+.rahmat-kontak-list{
+    list-style: none;
+    margin-left: -28px;
+    margin-top: 20px;
+
+}
+.rahmat-kontak-list li{
+    padding-bottom: 20px;
+}
+.rahmat-kontak-info{
+    font-size: small;
+    padding-left: 20px;
+}
+.rahmat-kontak-info a{
+    color: white;
+    transition: 0.5s;
+}
+.rahmat-kontak-info a:hover{
+    color: rgb(160, 160, 160);
+    transition: 0.2s;
+}
+footer{
+    background-color: #252525;
+}
+@media only screen and (min-width: 768px){
+    .rahmat-nama{
+        font-size: 50px;
+        text-align: right;
+    }
+    .rahmat-nama{
+        font-size: 50px;
+        letter-spacing: 0;
+    }
+    .welcome-text{
+        width: 500px;
+    }
+
 }
