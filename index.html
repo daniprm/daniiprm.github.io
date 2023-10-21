@@ -5,22 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        
 
         <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
         
         <title>Rahmat Ramadhan Permana</title>
     </head>
+
     <body>
         
         <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top shadow-sm">
             <div class="container">
                 <a href="#" class="navbar-brand">
                     <img src="img/Logo.svg" alt="Don Permanos" height="65px">
-                    <p>Dani Permana</p>
+                    <p>Rahmat Permana</p>
                 </a>
 
             <button
@@ -31,23 +41,28 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto fw-bold">
                     <li class="nav-item">
-                        <a href="" class="nav-link">
-                            Home
+                        <a href="#welcome" class="nav-link">
+                            Welcome!
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tentang" class="nav-link">
+                            Tentang
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link">
-                            Blog
+                            Aktivitas
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link">
-                            About
+                            Keterampilan
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link">
-                            Contact
+                            Kontak
                         </a>
                     </li>
                 </ul>
@@ -57,26 +72,164 @@
         </nav>
 
         <!-- Header -->
-        <section class="header bg-light text-dark">
+        <section class="header bg-light text-dark" id="welcome">
             <div class="container p-4">
-                <div class="d-block d-sm-flex align-items-center">
-                    <img src="img/Welcome.svg" alt="header" class="img-fluid mt-3 w-50">
+                <div class="d-block d-md-flex">
+                    <div class="text-center">
+                        <img src="img/Welcome.svg" alt="header" class="img-fluid mt-3 w-50">
+                    </div>
                 
-                
-                    <div class="ms-5">
+                    <div class="welcome-text ms-5">
                         <h1>Welcome!</h1>
                         <p>
-                            Hello there, Welcome to 
-                                <a href="#" class="don  text-decoration-none">Dani Permana</a> blog. Enjoy this site!
+                            Halo, selamat datang di blog pribadi
+                                <a href="#" class="don  text-decoration-none">Rahmat Ramadhan Permana</a>. Blog ini berisi profil diri saya, jika setelah melihat blog ini anda tertarik untuk bekerja sama atau berkomunikasi dengan saya, silakan hubungi saya melalui <a href="#" class="don  text-decoration-none">Kontak</a> yang tertera.
                         </p>
                         
                         <button class="enter-blog btn btn-primary">
-                            <b>Enter The Blog</b>
+                            <a href="#tentang" class="enter">Enter The Blog</a>
                         </button>
                     </div>
                 </div>
                 
             </div>
         </section>
+
+        <section id="tentang" class="pt-5">
+            <div class="container">
+                <h1 class="text-center fw-bold">TENTANG SAYA</h1>
+                <div class="rahmat-deskripsi-singkat pt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                            <p class="rahmat-pre mx-auto">
+                                Halo, saya Rahmat Ramadhan Permana tapi bisa dipanggil Dani, seorang mahasiswa yang masih terus mengembangkan dirinya.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="rahmat-nama text-md-right text-center py-5">RAHMAT PERMANA</h1>
+                        </div>
+                        <div class="banner">
+                            <img src="img/tentang-banner.jpg" class="d-none d-md-inline-block pb-4" alt="">
+                        </div>
+                        <div class="rahmat-cerita">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga a voluptatibus quae velit facere blanditiis est dicta reprehenderit quas delectus nulla mollitia, consequuntur inventore optio porro enim! Sunt, at ipsam.
+                                Nemo temporibus numquam vel amet dolorum aliquid aliquam est eligendi nulla. Provident excepturi repellat eos culpa quae, accusamus nam, ullam eveniet, dolorem maxime ratione amet quam suscipit enim ipsam esse?
+                                Delectus, eveniet. Quae reprehenderit deleniti, atque reiciendis pariatur vero! Ipsam, illo nam! Quisquam blanditiis explicabo hic sint eum pariatur ad facilis! Dicta assumenda nisi laboriosam, dolorem consectetur neque minus rerum.
+                                Tempore ex aperiam fugiat sint sed quis nihil voluptates nesciunt quod perferendis, id sit iusto sapiente, repudiandae porro rerum ut cumque eaque veritatis repellat unde eius illo velit! Voluptate, praesentium!
+                                Suscipit iusto corrupti sequi eveniet quia voluptatem totam magni autem in alias expedita incidunt non illum maxime voluptates ipsa animi ea quibusdam ipsam similique, molestiae hic facere esse! Provident, rem.
+                                Modi mollitia placeat, molestias neque, odit eligendi reiciendis quod a labore esse earum voluptates cupiditate odio repudiandae ut quidem sequi quam expedita eaque dolor libero. Aut, officiis. Quod, unde vero?
+                                Commodi mollitia hic, fuga itaque illum velit eveniet quas officia vero, ad eligendi repellendus vitae veritatis ea sint facere odit officiis nulla voluptas sit asperiores et perspiciatis. Tempora, rem ut!
+                                Eveniet, nulla reiciendis inventore ducimus aspernatur voluptatum ullam voluptatem ipsa debitis excepturi quas provident officia ipsum totam repellendus voluptate veritatis, dolore veniam iusto minus. Possimus accusamus animi perferendis aliquid dignissimos!
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                <div class="row text-center g-5 p-5">
+                    <div class="col-md">
+                        <div class="card border-0">
+                            <img src="img/IMG_20231019_182647.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card border-0">
+                            <img src="img/IMG_20231019_182816.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card border-0">
+                            <img src="img/IMG_20231019_182737.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <footer class="text-white position-relative">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="navigate col-md-4 pt-4">
+                        <h4><b>Navigasi</b></h4>
+                        <div class="pb-2">
+                            <a href="#welcome">Welcome!</a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="#tentang">Tentang</a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="#aktivitas">Aktivitas</a>
+                        </div>
+                        <div class="pb-2">
+                            <a href="#keterampilan">Keterampilan</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pt-4">
+                        <h4><b>Kontak</b></h4>
+                        <ul class="rahmat-kontak-list">
+                            <li>
+                                <i aria-hidden="true" class="fas fa-phone"></i>
+                                <span class="rahmat-kontak-info"><a href="https://wa.me/+6283147882492" target="_blank" class="text-decoration-none">0831-4788-2492</a></span>
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-envelope"></i>
+                                <span class="rahmat-kontak-info"><a href="mailto:rahmatramadhanpermana@gmail.com" class="text-decoration-none">rahmatramadhanpermana@gmail.com</a></span>
+                            </li>
+                            <li>
+                                <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+                                <span class="rahmat-kontak-info" class="text-decoration-none">Surabaya, Indonesia</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 pt-4">
+                        <h4 class="pb-2"><b>Sosial</b></h4>
+                        <div class="sosial-container d-flex">
+                            <a href="https://www.linkedin.com/in/rahmat-ramadhan-permana-77520524a" target="_blank">
+                                <div class="rahmat-sosial-icon d-flex me-3">
+                                    <img src="img/linkedIn icon.svg" alt="LinkedIn" class="mx-auto w-50">
+                                </div>
+                            </a>
+                            <a href="https://instagram.com/daniiprm" target="_blank">
+                                <div class="rahmat-sosial-icon d-flex me-3">
+                                    <img src="img/insta icon.svg" alt="Instagram" class="mx-auto">
+                                </div>
+                            </a>
+                            <a href="https://line.me/ti/p/rkc4Txo7cw" target="_blank">
+                                <div class="rahmat-sosial-icon d-flex me-3">
+                                    <img src="img/line icon.svg" alt="Line" class="mx-auto">
+                                </div>
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <p class="copy text-center pt-5">
+                        &copy; 2023 Rahmat Ramadhan Permana
+                    </p>
+                </div>
+
+                    <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                        <i class="fa fa-angle-up h1  rahmat-back-top"></i>
+                    </a>
+                
+                
+            </div>
+        </footer>
+        
     </body>
+
+    
 </html>
