@@ -18,7 +18,7 @@ function validateForm() {
         namaError.style.display = "block";
         hasError = true;
       } 
-    else if (inputNama.length > 20 || inputNama.length == 0) {
+    else if (inputNama.length > 20) {
       namaError.innerHTML = "Nama tidak boleh lebih dari 20 karakter.";
       namaError.style.display = "block";
       hasError = true;
