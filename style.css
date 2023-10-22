@@ -47,7 +47,7 @@
 }
 .nav-item::after{
     content: '';
-    height: 2px;
+    height: 4px;
     width: 0%;
     background: #144272;
     display: block;
@@ -166,9 +166,10 @@ footer{
 .banner img{
     width: 100%;
 }
-.rahmat-cerita p{
+.rahmat-cerita{
     text-align: justify;
     line-height: 2;
+    width: 80%;
 }
 
 .rahmat-back-top{
