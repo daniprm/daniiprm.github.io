@@ -6,8 +6,8 @@
     color: white;
 }
 .navbar{
-    background-color: rgba(245, 245, 245, 0.75);
-    backdrop-filter: blur(10px);
+    background-color: rgba(245, 245, 245, 0.75); /* Background with transparency */
+    backdrop-filter: blur(10px); /* Blurred effect */
 }
 .header{
     margin-top: 91px;
