@@ -380,3 +380,11 @@ textarea{
 #kontak, #galeri{
     padding-top: 100px;
 }
+
+.pesan-error {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
