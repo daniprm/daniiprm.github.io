@@ -13,18 +13,16 @@ function validateForm() {
     var inputEmail = document.getElementById("inputEmail").value;
     var emailError = document.getElementById("emailError");
 
-    
-    // Validasi nama (tidak boleh lebih dari 20 karakter)
-    if (inputNama.length > 20 || inputNama.length == 0) {
+    if (inputNama.length == 0) {
+        namaError.innerHTML = "Nama tidak boleh kosong";
+        namaError.style.display = "block";
+        hasError = true;
+      } 
+    else if (inputNama.length > 20 || inputNama.length == 0) {
       namaError.innerHTML = "Nama tidak boleh lebih dari 20 karakter.";
       namaError.style.display = "block";
       hasError = true;
-    }
-    else if (inputNama.length == 0) {
-      namaError.innerHTML = "Nama tidak boleh kosong";
-      namaError.style.display = "block";
-      hasError = true;
-    } else {
+    }else {
       namaError.style.display = "none";
     }
 
@@ -56,7 +54,5 @@ function validateForm() {
         return false;
       }
 
-    return true;
-    
+    return true; 
   }
-  
